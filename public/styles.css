@@ -6,13 +6,23 @@ body {
   font-size: 24px;
 }
 
-#background-rectangle {
-  width: 600px;
-  height: 200px;
+#background-frame {
+  width: 650px;
+  height: 250px;
   border: 1px solid black;
+  overflow: hidden;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: purple;
+}
+
+#background-rectangle {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  position: relative;
+  margin: 25px auto;
   background-color: blueviolet;
 }
