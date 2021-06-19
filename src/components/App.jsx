@@ -1,6 +1,6 @@
 import React from 'react';
 import EnterSite from './EnterSite.jsx';
-import Background from './Background.jsx';
+import Background from './Background.jsx'
 
 class App extends React.Component {
   constructor(props) {
