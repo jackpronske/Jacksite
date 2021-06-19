@@ -5,3 +5,14 @@ body {
 #timer {
   font-size: 24px;
 }
+
+#background-rectangle {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: blueviolet;
+}

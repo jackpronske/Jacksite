@@ -1,5 +1,6 @@
 import React from 'react';
 import EnterSite from './EnterSite.jsx';
+import Background from './Background.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,7 +22,7 @@ class App extends React.Component {
 
     const currentView = showLogin ?
       <EnterSite handleEnterSiteButtonClick={this.handleEnterSiteButtonClick}/>
-      : <div> hello something else </div>;
+      : <Background />;
 
     return (
       <>
