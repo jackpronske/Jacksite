@@ -42,11 +42,23 @@ body {
 }
 
 .enter-site-button {
-  margin-top: 20%;
   border-radius: 5%;
   padding: 8px;
   padding-top: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: 2.5s appear;
+  animation-delay: 2s;
+  color: white;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
