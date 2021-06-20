@@ -12,7 +12,7 @@ class Background extends React.Component {
     return (
       <div className="enter-site-container">
         <div className="container">
-          <div className="slider"> jack   pronske </div>
+          <div className="slider"> welcome to jack pronske </div>
         </div>
         <div className="enter-site-button"> enter </div>
       </div>
