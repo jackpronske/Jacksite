@@ -10,8 +10,11 @@ class Background extends React.Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="slider"> Jack Pronske </div>
+      <div className="enter-site-container">
+        <div className="container">
+          <div className="slider"> jack   pronske </div>
+        </div>
+        <div className="enter-site-button"> enter </div>
       </div>
     )
   }

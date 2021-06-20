@@ -6,7 +6,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showLogin: false,
+      showLogin: true,
     };
     this.handleEnterSiteButtonClick = this.handleEnterSiteButtonClick.bind(this);
   }
@@ -21,8 +21,8 @@ class App extends React.Component {
     const { showLogin } = this.state;
 
     const currentView = showLogin ?
-      <EnterSite handleEnterSiteButtonClick={this.handleEnterSiteButtonClick}/>
-      : <Background />;
+      <Background />
+      : null;
 
     return (
       <>

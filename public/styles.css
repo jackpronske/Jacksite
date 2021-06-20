@@ -9,19 +9,29 @@ body {
   font-size: 20px;
 }
 
+.enter-site-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .container {
-  height: 42px;
+  margin-top: 20%;
+  display: flex;
+  justify-content: center;
+  height: 46px;
   overflow: hidden;
   border-radius: 5px;
 }
 
 .slider {
-  animation: 3s slide-up;
+  animation: 2.5s slide-up;
 }
 
 @keyframes slide-up {
   from {
-    margin-top: 5%;
+    margin-top: 20%;
     color: rgba(255, 255, 255, 0)
   }
 
@@ -29,4 +39,14 @@ body {
     margin-top: 0%;
     color: rgba(255, 255, 255, .95);
   }
+}
+
+.enter-site-button {
+  margin-top: 20%;
+  border-radius: 5%;
+  padding: 8px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
