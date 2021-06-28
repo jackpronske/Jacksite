@@ -35,6 +35,10 @@ body {
   animation: slide-up 4s ease forwards;
   font-size: 64px;
   text-shadow: none;
+
+	background: linear-gradient(to right, black 46.5%, white 50%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 @keyframes slide-up {
