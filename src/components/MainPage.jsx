@@ -9,8 +9,10 @@ class MainPage extends Component {
   render() {
     return (
       <div>
-        <div> Jack Pronske </div>
-        <ul>
+        <div className="main-page-name"> Jack Pronske </div>
+        <div className="main-page-subname"> Full Stack Software Engineer </div>
+        <div className="lfw"> LFW </div>
+        {/* <ul>
           <li>Home</li>
           <li>Work</li>
           <li>Contact</li>
@@ -20,7 +22,7 @@ class MainPage extends Component {
         <div>Work examples, starting with FEC gif, create the breathe page</div>
         <h3>Contact</h3>
         <div>this should be at the bottom of the page, my contact info and possibly a way to copy my email address from a click of a buton</div>
-        <div>social media icons (linkedin, dev twitter, github)</div>
+        <div>social media icons (linkedin, dev twitter, github)</div> */}
       </div>
     );
   }

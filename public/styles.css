@@ -1,4 +1,42 @@
+html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
 body {
   background-color: black;
   color: white;
+}
+
+.enter-site-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px dotted red;
+  align-items: center;
+}
+
+.welcome-track {
+  margin: auto 0;
+  border: 1px dotted yellow;
+  overflow: hidden;
+  padding: 2px;
+}
+
+.welcome-slider {
+  margin: auto 0;
+  transform: translateY(100%);
+  animation: slide-up 4s ease forwards;
+}
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0%); }
+}
+
+.enter-site-button {
+  margin-top: 30px;
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 3px;
 }

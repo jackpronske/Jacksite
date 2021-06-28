@@ -1,12 +1,12 @@
 import React from 'react';
 
 const EnterSite = (props) => (
-  <div>
-    <div id="welcome-track">
-      <div id="welcome-slider">welcome to jack pronske</div>
+  <div className="enter-site-container">
+    <div className="welcome-track">
+      <div className="welcome-slider">welcome to jack pronske</div>
     </div>
     <div
-      id="enter-site"
+      className="enter-site-button"
       onClick={() => props.showHide('showEnterSite')}
     >enter site</div>
   </div>
