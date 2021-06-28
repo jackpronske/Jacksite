@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const template = React.createElement('p', {}, 'Hello from react');
+import App from './components/App.jsx';
 
-ReactDOM.render(template, document.getElementById('root'));
+
+
+ReactDOM.render(
+  <App />,
+  document.getElementById('root')
+);
