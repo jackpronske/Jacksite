@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EnterSite from './EnterSite.jsx';
 
 class App extends Component {
   constructor(props) {
@@ -11,7 +12,7 @@ class App extends Component {
   render() {
     const { showEnterSite } = this.state;
     const pageView = showEnterSite ?
-      <div> Enter Here </div> :
+      <EnterSite /> :
       <div> We are Entered </div>;
 
     return (
