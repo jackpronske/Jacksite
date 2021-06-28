@@ -23,7 +23,7 @@ class App extends Component {
 
     const pageView = showEnterSite ?
       <EnterSite showHide={this.showHide}/> :
-      <div> We are Entered </div>;
+      <div> stop clicking enter site and add the nav bar next, then the basic layout of the main page, its easy! get something laid out tonight </div>;
 
     return (
       <div>
