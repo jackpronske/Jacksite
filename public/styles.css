@@ -1,5 +1,5 @@
 html {
-  /* margin: 0px; */
+  margin: 0px;
 }
 
 body {
@@ -17,39 +17,44 @@ body {
   width: 99%;
   display: flex;
   flex-direction: column;
-  /* border: 1px dotted red; */
   align-items: center;
-  justify-content: space-around;
 }
 
 .welcome-track {
-  /* margin: auto 0; */
-  /* border: 1px dotted yellow; */
   overflow: hidden;
   padding: 16px;
+  margin-top: 30px;
 }
 
 .welcome-slider {
-  /* margin: auto 0; */
   transform: translateY(120%);
   animation: slide-up 4s ease forwards;
+  animation-delay: 1s;
   font-size: 64px;
   text-shadow: none;
+  opacity: 0%;
+}
 
-	background: linear-gradient(to right, black 46.5%, white 50%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+#transparent-text {
+  color: transparent;
+  animation-delay: 0s;
+  font-size: 52px;
 }
 
 @keyframes slide-up {
   from { transform: translateY(120%); }
-  to { transform: translateY(0%);
-    text-shadow: 0px 4px 5px rgba(255, 255, 255, 0.25),
-    4px 8px 5px rgba(255, 255, 255, 0.12),
-    -4px 8px 5px rgba(255, 255, 255, 0.12); }
+  to {
+    transform: translateY(0%);
+    text-shadow:
+      0px 4px 5px rgba(255, 255, 255, 0.25),
+      4px 8px 5px rgba(255, 255, 255, 0.12),
+     -4px 8px 5px rgba(255, 255, 255, 0.12);
+    opacity: 100%;
+    }
 }
 
 .enter-site-button {
+  margin-top: 50px;
   background: linear-gradient(to right, white 50%, black 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -57,7 +62,7 @@ body {
   border-radius: 5px;
   padding: 6px;
   animation: fade-in 2s ease forwards;
-  animation-delay: 2s;
+  animation-delay: 3s;
   opacity: 0%;
   transition-duration: 1s;
 }
@@ -72,7 +77,6 @@ body {
   box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.2);
   background-position: left bottom;
   color: black;
-  content: "HERE";
 }
 
 .enter-site-button:after{
