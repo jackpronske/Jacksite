@@ -4,13 +4,20 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      showEnterSite: true,
     };
   }
 
   render() {
+    const { showEnterSite } = this.state;
+    const pageView = showEnterSite ?
+      <div> Enter Here </div> :
+      <div> We are Entered </div>;
+
     return (
-      <div>Hello World</div>
+      <div>
+        {pageView}
+      </div>
     );
   }
 };
