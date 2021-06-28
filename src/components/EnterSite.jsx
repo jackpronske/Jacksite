@@ -1,9 +1,9 @@
 import React from 'react';
 
-const EnterSite = () => (
+const EnterSite = (props) => (
   <div>
     <div>welcome to jack pronske</div>
-    <div>enter site</div>
+    <div onClick={() => props.showHide('showEnterSite')}>enter site</div>
   </div>
 );
 

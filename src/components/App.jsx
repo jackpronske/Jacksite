@@ -7,12 +7,22 @@ class App extends Component {
     this.state = {
       showEnterSite: true,
     };
+
+    this.showHide = this.showHide.bind(this);
   }
+
+  showHide(comp) {
+    const currentStatus = this.state[comp];
+    this.setState({
+      [comp]: !currentStatus,
+    });
+  };
 
   render() {
     const { showEnterSite } = this.state;
+
     const pageView = showEnterSite ?
-      <EnterSite /> :
+      <EnterSite showHide={this.showHide}/> :
       <div> We are Entered </div>;
 
     return (
