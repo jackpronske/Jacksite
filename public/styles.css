@@ -28,8 +28,8 @@ body {
 
 .welcome-slider {
   transform: translateY(120%);
-  animation: slide-up 4s ease forwards;
-  animation-delay: 1s;
+  animation: slide-up 2.5s ease-out forwards;
+  animation-delay: 0.8s;
   font-size: 64px;
   text-shadow: none;
   opacity: 0%;
@@ -81,6 +81,7 @@ body {
 
 .enter-site-button:after{
   content:'ENTER';
+  transition-duration: 0.5s;
 }
 .enter-site-button:hover:after{
   content:'HERE';
