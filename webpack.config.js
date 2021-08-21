@@ -1,22 +1,19 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  mode: 'development',
-  entry: './src/app.js',
+  mode: "development",
+  entry: "./client/src",
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js'
+    path: path.join(__dirname, "client", "public"),
+    filename: "bundle.js",
   },
   module: {
     rules: [
       {
-        test: /\.js|.jsx$/,
+        test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
-      }
-    ]
+        loader: "babel-loader",
+      },
+    ],
   },
-  devServer: {
-    contentBase: path.join(__dirname, 'public')
-  }
 };
