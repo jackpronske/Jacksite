@@ -1,10 +1,38 @@
-html {
-  margin: 0px;
-}
 
 body {
+  margin: auto;
   background-color: black;
   color: white;
   font-family: 'Ubuntu', sans-serif;
 }
 
+.header {
+  width: 95%;
+  max-width: 1300px;
+  position:fixed;
+  height: 4em;
+  /* border: 1px dotted white; */
+  background-color: rgba(255, 255, 255, .1);
+  padding: 0 1em;
+  position: fixed;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+
+  display: grid;
+  grid-template-columns: 1fr  1.2fr;
+}
+
+.header-title {
+  grid-area: 1/1/2/2;
+  align-self: center;
+}
+
+.nav-bar {
+  grid-area: 1/2/2/3;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
