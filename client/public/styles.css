@@ -7,12 +7,13 @@ body {
 }
 
 .header {
-  width: 95%;
+  z-index: 2;
+  width: 100%;
   max-width: 1300px;
   position:fixed;
-  height: 4em;
+  height: 5em;
   /* border: 1px dotted white; */
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(0, 0, 0, .7);
   padding: 0 1em;
   position: fixed;
   left: 50%;
@@ -23,16 +24,31 @@ body {
   grid-template-columns: 1fr  1.2fr;
 }
 
+.header-logo {
+  grid-area: 1/1/2/2;
+  width: 80px;
+  align-self: center;
+}
+
 .header-title {
   grid-area: 1/1/2/2;
   align-self: center;
+  margin-left: 80px;
 }
 
 .nav-bar {
   grid-area: 1/2/2/3;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-transform: uppercase;
+}
+
+.bio-image {
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
