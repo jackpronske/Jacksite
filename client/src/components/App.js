@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import Header from "./header/Header";
 import Bio from "./bio/Bio";
+import Skills from "./skills/Skills";
+import Work from "./work/Work";
+import Contact from "./contact/Contact";
+import Footer from "./footer/Footer";
 
 class App extends Component {
   constructor(props) {
@@ -12,7 +16,11 @@ class App extends Component {
     return (
       <>
         <Header />
-        {/* <Bio /> */}
+        <Bio />
+        <Skills />
+        <Work />
+        <Contact />
+        <Footer />
       </>
     );
   }

@@ -1,7 +1,7 @@
 import React from "react";
 
 const Bio = () => {
-  return <div>bio</div>;
+  return <div className="container bio-container">bio</div>;
 };
 
 export default Bio;
