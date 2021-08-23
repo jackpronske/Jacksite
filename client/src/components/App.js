@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <>
         <Header />
-        <Bio />
+        {/* <Bio /> */}
       </>
     );
   }

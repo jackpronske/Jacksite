@@ -1,6 +1,6 @@
 
 body {
-  margin: auto;
+  margin: 0 auto;
   background-color: black;
   color: white;
   font-family: 'Ubuntu', sans-serif;
@@ -8,47 +8,80 @@ body {
 
 .header {
   z-index: 2;
-  width: 100%;
-  max-width: 1300px;
+  width: 92%;
+  max-width: 980px;
+  min-width: 244px;
   position:fixed;
   height: 5em;
   /* border: 1px dotted white; */
   background-color: rgba(0, 0, 0, .7);
-  padding: 0 1em;
-  position: fixed;
+  /* padding: 0 1em; */
   left: 50%;
-  top: 0%;
   transform: translateX(-50%);
 
-  display: grid;
-  grid-template-columns: 1fr  1.2fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container-logo-title {
+  width:35%;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
 }
 
 .header-logo {
-  grid-area: 1/1/2/2;
   width: 80px;
-  align-self: center;
-}
-
-.header-title {
-  grid-area: 1/1/2/2;
-  align-self: center;
-  margin-left: 80px;
 }
 
 .nav-bar {
-  grid-area: 1/2/2/3;
+  width: 50%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   text-transform: uppercase;
+  /* border: 1px solid red; */
 }
 
-.bio-image {
-  width: 100%;
-  max-width: 1300px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+.nav-item {
+  padding-left: .5rem;
+}
+
+@media (max-width: 620px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-logo-title {
+    width: 90%;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    width: 70%;
+  }
+
+  .nav-item {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-logo-title {
+    flex-direction: column;
+  }
+
+  .header-title {
+    margin: 0;
+    padding-bottom: 1em;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    padding-bottom: .4rem;
+  }
 }

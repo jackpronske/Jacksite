@@ -1,11 +1,7 @@
 import React from "react";
 
 const Bio = () => {
-  return (
-    <div>
-      <img className="bio-image" src="images/Waterfall-jack.png"></img>
-    </div>
-  );
+  return <div>bio</div>;
 };
 
 export default Bio;
