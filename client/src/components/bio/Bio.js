@@ -15,7 +15,7 @@ const Bio = ({ guts }) => {
       <div className="bio-about">
         <h3 className="bio-title">Full Stack Developer</h3>
         <div className="bio-name-button-container">
-          <p className="bio-name">Jack Pronske</p>
+          <p className="bio-name">Hello, I'm Jack.</p>
         </div>
         <p>
           I specialize in Javascript and my tech stack includes React/Redux,
