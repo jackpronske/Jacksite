@@ -13,10 +13,22 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
+.container {
+  margin: 3rem auto;
+  height: 100vh;
+  width: 92%;
+  max-width: 1080px;
+ }
+
+ * {
+  box-sizing: border-box;
+}
+
 .header {
+  top:0;
   z-index: 2;
   width: 92%;
-  max-width: 980px;
+  max-width: 1080px;
   min-width: 244px;
   position:fixed;
   left: 50%;
@@ -114,16 +126,7 @@ body {
   }
 }
 
-.container {
-  margin: 0 auto;
-  height: 100vh;
-  width: 92%;
-  max-width: 980px;
- }
 
- * {
-  box-sizing: border-box;
-}
 
 .bio-container {
   display: flex;
@@ -140,13 +143,45 @@ body {
   border-radius: .5em;
 }
 
+.bio-name {
+  color:rgba(255, 255, 255, 0.5);
+  padding-left: 1em;
+  padding-bottom: .5em;
+}
+
+.bio-title {
+  font-size: 1.5em;
+}
+
+/* .bio-name-button-container {
+  display: flex;
+  /* border: 1px dotted white; */
+  /* align-items: center;
+  justify-content: space-between;
+} */
+
+.bio-resume-button {
+  padding: .2em;
+  border:.1em solid white;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border-radius: .1em;
+
+}
+
+.last-paragraph {
+  padding-bottom: 2rem;
+}
+
 @media (max-width: 800px) {
   .bio-container {
     flex-direction: column;
     justify-content: space-around;
   }
   .bio-about {
-    width: 65%;
+    width: 80%;
   }
   .bio-background {
     width: 75%;
@@ -159,5 +194,41 @@ body {
   }
   .bio-background {
     width: 90%;
+  }
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 1px solid grey; */
+}
+
+.skill-item-container {
+  /* border: 1px dotted white; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skill-item-logo {
+  width: 65%;
+  border-radius: .1em;
+}
+.skill-item-name {
+  padding-top: .3em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 800px) {
+  .skill-item-container {
+    width: 42%;
+  }
+}
+
+@media (max-width: 500px) {
+  .skill-item-container {
+    width: 42%;
   }
 }

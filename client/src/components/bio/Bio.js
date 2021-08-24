@@ -13,17 +13,31 @@ const Bio = ({ guts }) => {
   return (
     <div id="about" className="container bio-container">
       <div className="bio-about">
-        <h3>Full Stack Developer</h3>
-        <p>Jack Pronske</p>
+        <h3 className="bio-title">Full Stack Developer</h3>
+        <div className="bio-name-button-container">
+          <p className="bio-name">Jack Pronske</p>
+        </div>
         <p>
-          something about me asdfasdfasdfasdfasdfasdfasdf sdfa sdfasdfasdfasdfa
-          sdfasdf asdfasdfasdf asdf asdfasdfa sdfasdfa sdfa sdf asdfasdfasd fsdf
-          asdf asdf asdf asdfasdfasdfa sdfa sdf asdf asdf asdfasdfa sfasdfasdf
-          asdfasdfa sdfa sdfasdf
+          I specialize in Javascript and my tech stack includes React/Redux,
+          NodeJS/ExpressJS, SQL/NoSQL databases, and some AWS.
         </p>
+        <p className="last-paragraph">
+          Previously in life, I was a professionally sponsored musician/educator
+          and wrote a book about techniques and processes for my craft. This
+          required me to develop a strong attention to detail and dedication to
+          see longer projects through. I continue to bring that same energy into
+          my passion for programming.
+        </p>
+        <a
+          href="assets/Jack_Pronske_Resume.pdf"
+          download
+          className="bio-resume-button"
+        >
+          {" "}
+          Download Resume{" "}
+        </a>
       </div>
       {meOrGuts}
-      {/* <img src="images/Waterfall-jack.png" className="bio-background" /> */}
     </div>
   );
 };
