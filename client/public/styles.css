@@ -38,7 +38,7 @@ body {
 }
 
 .header-logo:hover {
-  cursor:wait;
+  cursor: pointer;
 }
 
 .nav-bar {
