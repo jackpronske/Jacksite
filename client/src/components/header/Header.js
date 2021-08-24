@@ -1,17 +1,21 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-const Header = () => {
+const Header = ({ makeGuts }) => {
   return (
-    <div>
+    <header>
       <div className="header">
         <div className="container-logo-title">
-          <img className="header-logo" src="images/Logo.png"></img>
+          <img
+            onClick={makeGuts}
+            className="header-logo"
+            src="images/Logo.png"
+          ></img>
           <h3 className="header-title">Jack Pronske</h3>
         </div>
         <NavBar />
       </div>
-    </div>
+    </header>
   );
 };
 
