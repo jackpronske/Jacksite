@@ -50,7 +50,6 @@ body {
 }
 
 .nav-item {
-  padding-left: .5rem;
   color: white;
   text-decoration: none;
   font-weight: 300;
@@ -78,10 +77,7 @@ body {
     width: 80%;
     padding-top: 1rem;
     padding-right: 0;
-  }
-
-  .nav-item {
-    padding-left: 0;
+    padding-bottom: 1rem;
   }
   .header-logo {
     transform: scale(1.3);
