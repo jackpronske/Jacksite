@@ -360,3 +360,9 @@ width: 35%;
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 500px) {
+  .foot {
+    transform: scale(1);
+  }
+}
