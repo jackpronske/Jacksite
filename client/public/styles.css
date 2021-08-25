@@ -24,6 +24,8 @@ body {
   box-sizing: border-box;
 }
 
+/* ============ HEADER ============ */
+
 .header {
   top:0;
   z-index: 2;
@@ -126,7 +128,7 @@ body {
   }
 }
 
-
+/* ============ BIO ============ */
 
 .bio-container {
   display: flex;
@@ -168,7 +170,6 @@ body {
   background-color: black;
   color: white;
   border-radius: .1em;
-
 }
 
 .last-paragraph {
@@ -196,6 +197,8 @@ body {
     width: 90%;
   }
 }
+
+/* ============ SKILLS ============ */
 
 .skills-container {
   display: flex;
@@ -230,5 +233,49 @@ body {
 @media (max-width: 500px) {
   .skill-item-container {
     width: 42%;
+  }
+}
+
+
+/* ============ CONTACT ============ */
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.contact-item-container {
+  /* border: 1px solid white; */
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-item-name {
+  text-transform: uppercase;
+}
+
+.contact-item-image {
+  width: 50%;
+}
+
+@media (max-width: 800px) {
+  .contact-item-container {
+    width: 45%;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact-container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .contact-item-container {
+    width: 50%;
+    padding: .1em 0;
   }
 }

@@ -1,7 +1,8 @@
 import React from "react";
 import NavBar from "./NavBar";
 
-const Header = ({ makeGuts }) => {
+const Header = ({ makeGuts, guts }) => {
+  const currentLogo = guts ? "images/Brand.png" : "images/Logo.png";
   return (
     <header>
       <div className="header">
@@ -9,7 +10,7 @@ const Header = ({ makeGuts }) => {
           <img
             onClick={makeGuts}
             className="header-logo"
-            src="images/Logo.png"
+            src={currentLogo}
           ></img>
           <h3 className="header-title">Jack Pronske</h3>
         </div>

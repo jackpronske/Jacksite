@@ -26,7 +26,7 @@ class App extends Component {
     const { guts } = this.state;
     return (
       <>
-        <Header makeGuts={this.makeGuts} />
+        <Header makeGuts={this.makeGuts} guts={guts} />
         <Bio guts={guts} />
         <Skills />
         <Work />
