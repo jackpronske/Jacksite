@@ -18,15 +18,14 @@ const Bio = ({ guts }) => {
           <p className="bio-name">Hello, I'm Jack.</p>
         </div>
         <p>
-          I specialize in Javascript and my tech stack includes React/Redux,
-          NodeJS/ExpressJS, SQL/NoSQL databases, and some AWS.
+          I'm a software developer base out of Austin, TX. As someone who is
+          highly focused and attentive to detail, I thrive on building quality
+          systems that surpass end users' expectations.
         </p>
         <p className="last-paragraph">
-          Previously in life, I was a professionally sponsored musician/educator
-          and wrote a book about techniques and processes for my craft. This
-          required me to develop a strong attention to detail and dedication to
-          see longer projects through. I continue to bring that same energy into
-          my passion for programming.
+          I specialize in Javascript, tech stack includes React/Redux,
+          NodeJS/ExpressJS, SQL/NoSQL databases, as well as AWS and other cloud
+          services.
         </p>
         <a
           href="assets/Jack_Pronske_Resume.pdf"
