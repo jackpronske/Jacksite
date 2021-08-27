@@ -6,13 +6,7 @@ const ContactItem = ({ contact }) => {
       case "MAIL":
         navigator.clipboard.writeText(contact.name);
         return;
-      case "LOCATION":
-        window.open("https://youtu.be/AW2cmIIomac?t=246", "_blank");
-      case "PHONE":
-        window.open("https://zoom.us/", "_blank");
-      case "GITHUB":
-        window.open(contact.url, "_blank");
-      case "LINKEDIN":
+      case "LINK":
         window.open(contact.url, "_blank");
     }
   };
