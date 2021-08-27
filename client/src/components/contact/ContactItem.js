@@ -6,7 +6,7 @@ const ContactItem = ({ contact }) => {
       case "MAIL":
         navigator.clipboard.writeText(contact.name);
         return;
-      case "LINK":
+      default:
         window.open(contact.url, "_blank");
     }
   };
