@@ -18,7 +18,7 @@ const Bio = ({ guts }) => {
           <p className="bio-name">Hello, I'm Jack.</p>
         </div>
         <p>
-          I'm a software developer base out of Austin, TX. As someone who is
+          I'm a software developer based out of Austin, TX. As someone who is
           highly focused and attentive to detail, I thrive on building quality
           systems that surpass end users' expectations.
         </p>
